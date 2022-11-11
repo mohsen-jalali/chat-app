@@ -1,10 +1,9 @@
-import 'package:chat_app/main.dart';
-import 'package:chat_app/src/presentation/constants/fonts/fonts.dart';
+import 'package:chat_app/src/presentation/constants/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 
-String get getFontFamily {
-  if (Localizations.localeOf(navigatorKey.currentContext!).languageCode == 'fa') {
-    return persianFont;
+String getFontFamily(BuildContext context) {
+  if (Localizations.localeOf(context).languageCode == 'fa') {
+    return Styles.persianFont;
   }
-  return englishFont;
+  return Styles.englishFont;
 }
