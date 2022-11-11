@@ -1,3 +1,4 @@
+import 'package:chat_app/src/data/di/repository_module.dart';
 import 'package:chat_app/src/data/di/storage_module.dart';
 import 'package:chat_app/src/presentation/di/presentation_injection.dart';
 
@@ -9,6 +10,7 @@ class Injector {
   }
 
   static Future<void> injectData() async {
+    await RepositoryModule.inject();
     await StorageModule.inject();
   }
 

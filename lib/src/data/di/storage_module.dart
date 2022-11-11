@@ -1,3 +1,4 @@
+import 'package:chat_app/src/data/entity/prefrences/preferences_entity.dart';
 import 'package:chat_app/src/data/storage/hive/hive.dart';
 import 'package:chat_app/src/data/storage/hive/hive_impl.dart';
 import 'package:chat_app/src/data/storage/keeper/keeper_actions.dart';
@@ -26,6 +27,8 @@ class StorageModule {
   static Future<void> _injectAndInitHive() async {
     var dir = await getApplicationDocumentsDirectory();
     await Hive.initFlutter(dir.path);
+    Hive
+    .registerAdapter(PreferencesEntityAdapter());
     KiwiContainer().registerSingleton<MyHive>((container) => HiveImpl());
   }
 }
