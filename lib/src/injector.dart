@@ -15,6 +15,7 @@ class Injector {
   }
 
   static _injectDomain() {
+
   }
 
   static _injectPresentation() {

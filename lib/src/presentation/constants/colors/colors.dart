@@ -21,7 +21,7 @@ class BackgroundColor{
 class SecondaryBackground{
   static Color get light => const Color(0xffEBEBEB);
 
-  static Color get dark => const Color(0xff555555);
+  static Color get dark => const Color(0xff313131);
 }
 
 class TextPrimaryColor{
