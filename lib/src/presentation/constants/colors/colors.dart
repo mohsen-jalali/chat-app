@@ -1,38 +1,43 @@
 import 'package:flutter/material.dart';
 
-class PrimaryColor{
+class PrimaryColor {
   static Color get light => const Color(0xff5D7FF2);
 
   static Color get dark => const Color(0xff96ADFB);
 }
 
-class SecondaryColor{
+class SecondaryColor {
   static Color get light => const Color(0xffCFD7F2);
 
   static Color get dark => const Color(0xff96ADFB);
 }
 
-class BackgroundColor{
+class BackgroundColor {
   static Color get light => const Color(0xffF5F5F5);
 
   static Color get dark => const Color(0xff232323);
 }
 
-class SecondaryBackground{
+class SecondaryBackground {
   static Color get light => const Color(0xffEBEBEB);
 
   static Color get dark => const Color(0xff313131);
 }
 
-class TextPrimaryColor{
+class TextPrimaryColor {
   static Color get light => const Color(0xff232323);
 
   static Color get dark => const Color(0xffFAFAFA);
 }
 
-class SubtitleColor{
+class SubtitleColor {
   static Color get light => const Color(0x80232323);
 
   static Color get dark => const Color(0x80fafafa);
 }
 
+class HoverSelectingButtonColor {
+  static Color get dark => const Color(0xff3d4675);
+
+  static Color get light => const Color(0xff96ADFB);
+}

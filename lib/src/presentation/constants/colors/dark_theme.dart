@@ -14,13 +14,15 @@ ThemeData get darkTheme {
     ),
     appBarTheme: AppBarTheme(
       systemOverlayStyle: SystemUiOverlayStyle.dark.copyWith(
-          statusBarColor: BackgroundColor.dark, // Colo// r for// Android
-          statusBarBrightness:
-              Brightness.light // Dark == white status bar -- for IOS.
-          ),
+        statusBarColor: BackgroundColor.dark,
+        statusBarBrightness: Brightness.light,
+      ),
       elevation: 0,
       backgroundColor: BackgroundColor.dark,
     ),
+    selectedRowColor: HoverSelectingButtonColor.dark,
+    splashColor:  HoverSelectingButtonColor.dark,
+    hoverColor: HoverSelectingButtonColor.dark,
     colorScheme: ColorScheme.light(
       brightness: Brightness.dark,
       primary: PrimaryColor.dark,
