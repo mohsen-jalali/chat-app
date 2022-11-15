@@ -37,7 +37,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSize {
       leading: Visibility(
         visible: hasBackButton,
         replacement: leading ?? const SizedBox.shrink(),
-        child: IconButtonWidget(
+        child: IconWidget(
           iconData: Icons.arrow_back_ios_new,
           onPressed: onPressBack,
         ),

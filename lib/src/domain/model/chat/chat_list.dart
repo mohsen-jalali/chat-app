@@ -1,9 +1,13 @@
-class ChatList {
+class ChatItem {
   String? contactName;
   String? lastMessage;
+  DateTime? messageDate;
+  int? unreadMessages;
 
-  ChatList({
+  ChatItem({
     this.contactName,
     this.lastMessage,
+    this.messageDate,
+    this.unreadMessages,
   });
 }

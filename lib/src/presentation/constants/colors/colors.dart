@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class PrimaryColor {
   static Color get light => const Color(0xff5D7FF2);
 
-  static Color get dark => const Color(0xff96ADFB);
+  static Color get dark => const Color(0xff5D7FF2);
 }
 
 class SecondaryColor {
@@ -40,4 +40,16 @@ class HoverSelectingButtonColor {
   static Color get dark => const Color(0xff3d4675);
 
   static Color get light => const Color(0xff96ADFB);
+}
+
+class ShimmerBaseColor {
+  static Color get light => const Color(0xffF5F5F5);
+
+  static Color get dark => const Color(0xff3f3f4a);
+}
+
+class ShimmerHighlightColor {
+  static Color get light => const Color(0xffecebeb);
+
+  static Color get dark => const Color(0xff505050);
 }

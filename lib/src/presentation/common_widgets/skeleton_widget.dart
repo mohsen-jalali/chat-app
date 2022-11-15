@@ -1,3 +1,5 @@
+import 'package:chat_app/src/presentation/constants/colors/colors.dart';
+import 'package:chat_app/src/presentation/helper/extensions/extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:skeleton_text/skeleton_text.dart';
 
@@ -23,8 +25,12 @@ class SkeletonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SkeletonAnimation(
-      shimmerColor: Colors.grey[200]!,
+      shimmerColor: context.isDark
+          ? ShimmerHighlightColor.dark
+          : ShimmerHighlightColor.light,
       shimmerDuration: 1200,
+      gradientColor:
+          context.isDark ? ShimmerBaseColor.dark : ShimmerBaseColor.light,
       borderRadius: shape == BoxShape.circle
           ? const BorderRadius.all(Radius.circular(100))
           : const BorderRadius.all(Radius.circular(10)),
@@ -33,16 +39,11 @@ class SkeletonWidget extends StatelessWidget {
         width: width,
         decoration: BoxDecoration(
           shape: shape,
-          boxShadow: [
-            BoxShadow(
-              color: const Color(0xff000000).withOpacity(0.10),
-              blurRadius: 10,
-            ),
-          ],
           borderRadius: shape == BoxShape.circle
               ? null
               : const BorderRadius.all(Radius.circular(10)),
-          color: const Color(0xFFE9E9E9),
+          color:
+              context.isDark ? ShimmerBaseColor.dark : ShimmerBaseColor.light,
         ),
       ),
     );

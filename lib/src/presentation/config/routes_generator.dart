@@ -1,3 +1,4 @@
+import 'package:chat_app/src/domain/bloc/chat_list_cubit/chat_list_cubit.dart';
 import 'package:chat_app/src/domain/bloc/splash_cubit/splash_cubit.dart';
 import 'package:chat_app/src/presentation/pages/chat_list/chat_list_page.dart';
 import 'package:chat_app/src/presentation/pages/splash/splash_page.dart';
@@ -15,7 +16,7 @@ class RouteGenerator {
             child: const SplashPage(),
           ),
       Routes.chatList: (context) => BlocProvider(
-        create: (context) => SplashCubit(),
+        create: (context) => ChatListCubit(),
         child: const ChatListPage(),
       ),
     };

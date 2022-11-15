@@ -2,7 +2,7 @@ import 'package:chat_app/src/presentation/helper/extensions/extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class IconButtonWidget extends StatelessWidget {
+class IconWidget extends StatelessWidget {
   final IconData? iconData;
   final String? iconSvg;
   final Color? iconColor;
@@ -15,7 +15,7 @@ class IconButtonWidget extends StatelessWidget {
   final double? borderRadius;
   final double? padding;
 
-  const IconButtonWidget({
+  const IconWidget({
     Key? key,
     this.iconData,
     this.iconSvg,
