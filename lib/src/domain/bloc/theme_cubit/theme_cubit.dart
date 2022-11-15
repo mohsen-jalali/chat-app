@@ -38,7 +38,6 @@ class ThemeCubit extends Cubit<HomeThemeState> {
 
   Future<ThemeData> checkTheme() async {
     String? theme = (await localStorageRepository.getPreferences()).theme;
-    print("checkFromKeeper ==================>$theme");
 
     if (theme != null) {
       if (theme == "dark") {
